@@ -17,7 +17,7 @@ export class RegistrationService {
       .set("email", user.email)
 
     return lastValueFrom(
-      this.http.post<string>("http://localhost:8080/api/register/", body.toString(), {headers})
+      this.http.post<string>("https://reg-server-backend.herokuapp.com/api/register/", body.toString(), {headers})
 
     )
   }
