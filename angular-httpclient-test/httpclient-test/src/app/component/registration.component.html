@@ -1,0 +1,23 @@
+<form (ngSubmit)="registerUser()" [formGroup]="registrationForm">
+  <table>
+    <thead>
+      <h1>Registration</h1>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name: </td>
+        <td><input type="text" formControlName="name"></td>
+      </tr>
+      <tr>
+        <td>Email: </td>
+        <td><input type="text" formControlName="email"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button type="submit">Register</button></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+<h1>Response</h1>
+<p>response: {{response}}</p>
